@@ -5,7 +5,7 @@ We recommend using Conda to manage your environment. We use vLLM (0.1.4) to acce
 Run the following commands to setup your environment, clone this git repo and do the following :
 
 ```
-cd Step-By-Step-Coding/src
+cd SBSC/src
 conda create -n tora python=3.10
 conda activate tora
 pip install packaging==22.0
