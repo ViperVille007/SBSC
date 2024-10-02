@@ -262,7 +262,7 @@ def api_with_func_call(engine,data_name,prompt_type, prompt, max_tokens, tempera
             break
         # get all outputs
         # support batch inference when n > 1
-        if data_name in ["odyssey","ob"] and prompt_type == "l2m_pal":
+        if data_name in ["odyssey","olympiadbench"] and prompt_type == "l2m_pal":
             data_name = "aime"
         prompt_1 = load_prompt(data_name, prompt_type) # for all other prompts with solutions       
         prompt_2 = load_prompt(data_name, prompt_type) # for all other prompts with solutions 
