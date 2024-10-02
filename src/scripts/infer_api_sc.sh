@@ -1,7 +1,7 @@
 set -ex
 MODEL_NAME_OR_PATH="claude-3-5-sonnet-20240620"
 
-DATA_NAME="amc"     # choose required dataset option:    amc/aime/odyssey/ob
+DATA_NAME="amc"     # choose required dataset option:    amc/aime/odyssey/olympiadbench
 SPLIT="test"
 PROMPT_TYPE="sbsc"    # choose required prompt option:    cot/pal/tora/l2m_pal/sbsc
 NUM_TEST_SAMPLE=-1
