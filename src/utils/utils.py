@@ -54,7 +54,7 @@ def load_prompt(data_name, prompt_type):
         data_name = "math"
     if prompt_type in ['platypus_fs', 'wizard_zs']:
         prompt_type = "cot"
-    if data_name in ["odyssey","ob"] and prompt_type == "l2m_pal":
+    if data_name in ["odyssey","olympiadbench"] and prompt_type == "l2m_pal":
         data_name = "aime"
     prompt_path = "./prompts/{}/{}.md".format(prompt_type, data_name)
     if not os.path.exists(prompt_path):
