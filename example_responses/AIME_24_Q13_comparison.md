@@ -3,7 +3,7 @@ Find the least positive integer m such that m^{4}+1 is divisible by p^{2}. (2024
 
 
 
-**SBSC Response (correct)**
+# SBSC Response (correct)
 Let's approach this problem step by step using SymPy-based Python code.
 
 ### Step 1: Import necessary libraries and define a function to check divisibility
@@ -133,33 +133,45 @@ The answer is \boxed{110}
 
 
 
-**o1_response (incorrect)**
+# o1_mini Response (incorrect)
 To solve this problem, we need to find the smallest prime $p$ such that there exists some integer $n$ with $p^2$ dividing $n^4 + 1$, and then find the smallest such $n$.
 
 Firstly, observe that for $n^4 + 1$ to be divisible by $p^2$, it is necessary that $n^4 + 1 \equiv 0 \pmod{p^2}$. Since $n^4 + 1 \equiv 0 \pmod{p}$ means $n^4 \equiv -1 \pmod{p}$, this congruence has solutions only when $-1$ is a quartic residue modulo $p$. Due to properties of quartic residues, this happens when $p \equiv 1 \pmod{8}$.
+
 The smallest prime satisfying $p \equiv 1 \pmod{8}$ is $p = 17$. Now, we attempt to find an integer $n$ such that $n^4 + 1$ is divisible by $17^2 = 289$. 
 
 Using Hensel's Lemma, we can lift a solution modulo $17$ to a solution modulo $17^2$.
+
 We start by finding $n$ such that $n^4 + 1 \equiv 0 \pmod{17}$. Testing $n = 2$, we find:
 $2^4 + 1 = 17 \equiv 0 \pmod{17}$
-Now, we seek $k$ such that:
-$(2 + 17k)^4 + 1 \equiv 0 \pmod{289}$
+
+Now, we seek $k$ such that: $(2 + 17k)^4 + 1 \equiv 0 \pmod{289}$
+
 Expanding and simplifying (modulo $289$), we get:
 $(2^4 + 1) + 4 \times 2^3 \times 17k \equiv 0 \pmod{289}$
+
 $17 + 544k \equiv 0 \pmod{289}$
+
 Simplify $544k \mod 289$ (since $544 \mod 289 = 255$):
+
 $17 + 255k \equiv 0 \pmod{289}$
 
 Now, since $\gcd(255, 289) = 17$, we can divide both sides by 17:
 $15k \equiv 16 \pmod{17}$
+
 Solve for $k$:
 $15k \equiv 16 \pmod{17}$
+
 $-2k \equiv 16 \pmod{17}$
+
 $2k \equiv -16 \pmod{17}$
+
 $2k \equiv 1 \pmod{17}$
+
 $k \equiv 9 \pmod{17}$
 
 So $k = 9$ is the smallest positive integer satisfying the congruence. 
+
 Therefore, the smallest $m$ is:
 $m = 2 + 17 \times 9 = 2 + 153 = 155$
 
