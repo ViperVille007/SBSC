@@ -3,7 +3,7 @@ In addition, each of the 900 residents owns a bag of candy hearts. There are 437
 Find the number of residents of Aimeville who own all four of these things.
 
 
-**SBSC response (Correct)**
+# SBSC response (Correct)
 
 Let's approach this problem step by step using set theory and the Principle of Inclusion-Exclusion. We'll use SymPy to help us with the calculations.
 ### Step 1: Define the sets and their sizes
@@ -100,7 +100,8 @@ The number of residents who own all four items is: 73
 The final answer is \boxed{73}
 
 
-**o1_mini response (Incorrect)**
+# o1_mini response (Incorrect)
+
 To solve this problem, let's interpret the given information carefully. 
 
 First, everyone in Aimeville owns a bag of candy hearts (C), so we can consider that item as universally owned and focus on the other three items: a diamond ring (D), a set of golf clubs (G), and a garden spade (S). 
