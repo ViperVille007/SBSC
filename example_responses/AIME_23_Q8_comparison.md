@@ -2,7 +2,7 @@
 There is a point P on the incircle of the rhombus such that the distances from P to the lines DA,AB, and BC are 9, 5, and 16, respectively. 
 Find the perimeter of ABCD. 
 
-**SBSC Response (Correct)**
+# SBSC Response (Correct)
 
 Let's approach this problem step by step using SymPy-based Python code.
 ### Step 1: Import necessary libraries and define symbols
@@ -104,7 +104,7 @@ Perimeter of the rhombus: 125.0000000
 The final answer is \boxed{125}
 
 
-**o1_mini Response (Incorrect)**
+# o1_mini Response (Incorrect)
 Firstly, note that in a rhombus with side length s and an acute angle \theta, the radius of the incircle is r = \dfrac{s \sin\theta}{2}. 
 
 Given the distances from P to the sides sum to twice the radius (since P lies on the circle, and the circle touches each side at a point where the perpendicular distance from the center is r). 
